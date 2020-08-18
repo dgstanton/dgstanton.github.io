@@ -1,0 +1,119 @@
+﻿body
+{
+    display:grid;
+    background-color:black;
+    grid-template-columns: 150px 1fr;
+}
+
+nav{
+    grid-area: 1 / 1 / 1 / 1;
+    display:inline-block;
+    position:fixed;
+    left:0;
+    top:0;
+    width: 150px;
+    height:100vw;
+    background-color:#00274C;
+    box-sizing: border-box;
+    margin: 0px;
+    grid-auto-rows: 30px;
+    grid-row-gap: 2px;
+    z-index: 2;
+    padding-top: 10vh;
+    font-size: 25px;
+    height: 100%;
+    text-align: center;
+    font-weight: 200;
+    line-height: 38px;
+    min-width: 150px;
+}
+nav a {
+    display:grid;
+    color:white;
+    font-family: "Courier Prime", monospace;
+    text-transform:uppercase;
+    text-decoration-line:none;
+    padding:5px 0px;
+    
+}
+nav a:hover{
+    color:gray;
+    text-indent:10px;
+}
+nav img {
+    
+    max-width: 200px;
+    max-height: 200px;
+    clip-path: circle(50%);
+}
+
+main{
+    grid-area: 1 / 2 / 1 / 2;
+    margin:0px;
+    font-family:"Open Sans", sans-serif;
+    display:grid;
+    grid-auto-rows:auto;
+}
+h1 {  
+    font-size: 4vw;
+    color: #00274C;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+    height: 4vw;
+    align-self: center;
+    padding: 1vw;
+    padding-left: 3vw;
+}
+
+header{
+    background-color:#FFCB05;
+    margin:0px;
+    width:45%;
+    margin-top: 2vw;
+    font-family:"Courier Prime", monospace;
+}
+
+main section {
+    background-color:white;
+    margin: 2.5% 2.5%;
+    
+}
+
+main section h2 {
+    background-color:#FFCB05;
+    margin:0px;
+    padding:1vw;
+    font-size:28px;
+    color:#00274C;
+}
+
+main section h3 {
+    background-color:#00274C;
+    margin:0 20px;
+    padding:1vw;
+    font-size:22px;
+    color:#FFCB05;
+}
+main section p {
+    padding: 5px 20px;
+    color:black;
+    margin:0px 10px 10px 10px;
+}
+
+#sparklogo {
+    width:40%;
+    float:left;
+    padding:2vw;
+}
+
+#fea {
+    box-sizing:border-box;
+    width:100%;
+    padding:2vw;
+}
+
+main a {
+    text-decoration:none;
+    color:blue;
+}

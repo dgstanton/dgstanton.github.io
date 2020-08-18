@@ -1,0 +1,179 @@
+﻿body
+{
+    display:grid;
+    background-color: black;
+    grid-template-areas: "nav header"
+        "nav intro"
+        "nav transit"
+        "nav basic"
+        "nav transit2"
+        "nav edu"
+        "nav hobbies";
+    grid-template-columns: 1fr 9fr;
+    /*grid-template-rows: 8vw 35vw 8vw 1fr;*/
+    margin: 0px;
+    
+}
+a {
+    text-decoration:none;
+    color:blue;
+}
+
+h1 {
+    font-size: 4vw;
+    color: #00274C;
+    text-transform: uppercase;
+    margin:0;
+    text-align: left;
+    height:4vw;
+    align-self:center;
+    padding:1vw;
+    padding-left:3vw;
+}
+
+header {
+    grid-area:header;
+    background-color: #FFCB05;
+    font-family: "Courier Prime", monospace;
+    width:45%;
+    justify-self:left;
+    margin-top:2vw;
+}
+
+nav {
+    box-sizing: border-box;
+    grid-area: nav;
+    margin: 0px;
+    grid-auto-rows: 30px;
+    grid-row-gap: 2px;
+    background-color: #00274C;
+    z-index: 2;
+    padding-top: 10vh;
+    font-size: 25px;
+    height: 100%;
+    text-align: center;
+    font-weight: 200;
+    line-height: 38px;
+    min-width: 150px;
+}
+nav a {
+    display:grid;
+    color:white;
+    font-family: "Courier Prime", monospace;
+    text-transform:uppercase;
+    text-decoration-line:none;
+    padding:5px 0px;
+    
+}
+nav a:hover{
+    color:gray;
+    text-indent:10px;
+}
+nav img {
+    
+    max-width: 200px;
+    max-height: 200px;
+    clip-path: circle(50%);
+    
+}
+section {
+    box-sizing:border-box;
+    width:100%;
+    margin:1vw 4vw;
+    margin-left:0vw;
+    /*border-radius:20px;*/
+    color:white;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.intro {
+    grid-area: intro;
+    font-size: 2vw;
+    text-align: center;
+    height: 30vw;
+    background-color: #00274C;
+    color: #FFCB05;
+    font-weight:600;
+    
+}
+.intro img {
+    float:left;
+    margin-right:2vw;
+    box-sizing:border-box;
+    height:100%;
+    
+}
+.intro p {
+    padding:2vw;
+    padding-top:6vw;
+    box-sizing:padding-box;
+    height:100%
+}
+.transition1 {
+    grid-area:transit;
+    text-align:center;
+    margin:0vw;
+    justify-self:center;
+    font-size:1.5vw;
+}
+.basics {
+    grid-area: basic;
+    background-color: #FFCB05;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    color:#00274C;
+}
+
+.basics .labels {
+    box-sizing:border-box;
+    float:left;
+    padding-right:.5vw;
+    color:black;
+    height:100%;
+    padding-bottom:20%;
+}
+.basics p {
+    margin:0px;
+    padding:1.5vw 2.5vw;
+    
+}
+.gray {
+    color:lightslategray;
+}
+.transition2 {
+    grid-area: transit2;
+    text-align: center;
+    margin: 0vw;
+    justify-self: center;
+    font-size: 1.5vw;
+    color:white;
+}
+
+.edu {
+    grid-area: edu;
+    font-size: 1.2vw;
+    line-height: 2vw;
+    background-color: white;
+    color: #00274C;
+    padding:0vw 2vw;
+}
+
+section h3 {
+    text-align:center;
+    font-size:2.5vw;
+    padding-bottom:0vw;
+}
+
+.hobbies {
+    grid-area:hobbies;
+    font-size:1.2vw;
+    padding: 0vw 2vw;
+    line-height: 2vw;
+}
+.hobbies img {
+    width: 40%;
+    padding: 1vw;
+    padding-left: 3vw;
+    
+}

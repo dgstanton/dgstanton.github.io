@@ -1,0 +1,87 @@
+﻿body
+{
+    display:grid;
+    background-color: black;
+    grid-template-areas: "nav header"
+        "nav main";
+    grid-template-columns: 1fr 9fr ;
+    grid-template-rows: 100vh 1fr;
+    margin: 0px;
+    
+}
+
+header {
+    grid-area: header;
+    box-sizing: border-box;
+    font-family: "Courier Prime", monospace;
+    color: white;
+    background-color: #00274C;
+    padding: 0vw;
+    width: 100%;
+    line-height: 0px;
+    background-image: url("./rapping.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-self: end;
+    font-size: 1.3vw;
+}
+
+header h1, h3 {
+    background-color: rgba(20,33,61,.4);
+    z-index: 2;
+    text-align: center;
+    margin-left: 60%;
+    margin-bottom:0%;
+    padding:2vw;
+}
+    header h3 {
+        grid-area: header;
+        color: #FFCB05;
+        line-height: 1.5vw;
+        margin-top: 0px;
+        padding-top: 0%;
+        padding-bottom: 0.5vw;
+    }
+
+nav {
+    box-sizing: border-box;
+    grid-area: nav;
+    margin: 0px;
+    grid-auto-rows: 30px;
+    grid-row-gap: 2px;
+    background-color: #00274C;
+    z-index: 2;
+    padding-top: 10vh;
+    font-size: 25px;
+    height: 100vh;
+    text-align: center;
+    font-weight: 200;
+    line-height: 38px;
+    min-width: 150px;
+}
+nav a {
+    display:grid;
+    color:white;
+    font-family: "Courier Prime", monospace;
+    text-transform:uppercase;
+    text-decoration-line:none;
+    padding:5px 0px;
+    
+}
+nav a:hover{
+    color:gray;
+    text-indent:10px;
+}
+nav img {
+    
+    max-width: 200px;
+    max-height: 200px;
+    clip-path: circle(50%);
+    
+}
+main{
+    grid-area:main;
+    color:white;
+
+}
