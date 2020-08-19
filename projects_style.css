@@ -133,3 +133,38 @@ main header p {
 main header p a {
     color:#00274C;
 }
+
+.socialgrid {
+    display: grid;
+    grid-template: 60px / 50px 50px 50px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0px;
+    margin-top: 200px;
+    justify-items: center;
+    align-items: center;
+}
+
+    .socialgrid a {
+        margin: 0px;
+        padding: 0px;
+    }
+
+#igphoto {
+    grid-area: 1 2 / 1 2;
+    padding: 0px;
+    width: 50px;
+}
+
+#liphoto {
+    grid-area: 1 1 / 1 1;
+    padding: 0px;
+    width: 40px;
+    padding-left: 10px;
+}
+
+#fbphoto {
+    grid-area: 1 3 / 1 3;
+    padding: 0px;
+    width: 40px;
+}
