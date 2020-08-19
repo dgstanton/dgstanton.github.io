@@ -3,6 +3,7 @@
     display:grid;
     background-color:black;
     grid-template-columns: 150px 1fr;
+    margin:0px;
 }
 
 nav{
@@ -62,16 +63,16 @@ h1 {
     text-align: left;
     height: 4vw;
     align-self: center;
-    padding: 1vw;
-    padding-left: 3vw;
+    padding: 1vw 3vw;
+    
 }
 
 header{
     background-color:#FFCB05;
     margin:0px;
-    width:45%;
     margin-top: 2vw;
     font-family:"Courier Prime", monospace;
+    width: 75%
 }
 
 main section {
@@ -116,4 +117,19 @@ main section p {
 main a {
     text-decoration:none;
     color:blue;
+}
+
+#market {
+    width:65%;
+    float:left;
+}
+
+main header p {
+    margin:0px;
+    padding: 0px 3vw 0px 1vw;
+    text-transform:uppercase;
+    font-size:20px;
+}
+main header p a {
+    color:#00274C;
 }
