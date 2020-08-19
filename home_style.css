@@ -19,7 +19,7 @@ header {
     padding: 0vw;
     width: 100%;
     line-height: 0px;
-    background-image: url("./rapping.JPG");
+    background-image: url("./Images/rapping.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,13 +35,13 @@ header h1, h3 {
     margin-bottom:0%;
     padding:2vw;
 }
-    header h3 {
-        grid-area: header;
-        color: #FFCB05;
-        line-height: 1.5vw;
-        margin-top: 0px;
-        padding-top: 0%;
-        padding-bottom: 0.5vw;
+header h3 {
+    grid-area: header;
+    color: #FFCB05;
+    line-height: 1.5vw;
+    margin-top: 0px;
+    padding-top: 0%;
+    padding-bottom: 0.5vw;
     }
 
 nav {
@@ -119,3 +119,4 @@ main{
     padding: 0px;
     width: 40px;
 }
+
