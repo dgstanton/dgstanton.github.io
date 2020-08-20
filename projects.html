@@ -123,7 +123,7 @@
                 <br /><br />
                 Our project was sponsored by the Integrated Biosystems and Biomechanics Laboratory (<a href="http://me-web.engin.umich.edu/ibbl/">IBBL</a>) in the UM ME department. Researchers in the IBBL had developed a novel microfluidic device which enabled stem cells to be induced into an analog for a human embryo. 
                 Research conducted using this device was <a href="http://me-web.engin.umich.edu/ibbl//pdf/2019_Nature_Zheng.pdf">published in Nature</a> in 2019. Because of the novel ability of generate human embryo analogs, this microfluidic device has the potential to be used for research into human development and 
-                pharmaceutical toxicology research on the effects on novel drugs on embryos. However, one of the major challenges preventing the mass production of the microfluidic devices was need to hand punch the ports on the device one at a time. Punching ports took around 30 minutes per device.
+                pharmaceutical toxicology research on the effects on novel drugs on embryos. However, one of the major challenges preventing the mass production of the microfluidic devices was need to hand punch the ports on the device one at a time. Punching ports took around 5 minutes per device.
                 Thus, we were asked to design a puncher that would significantly reduce the time for this process.
             </p>
             <figure id="devices">
@@ -133,7 +133,21 @@
                 </figcaption>
             </figure>
             <p>
-
+                Our design punches six devices at one time in an estimated five minutes which is an over 80% reduction in cycle time. We calculated that to punch through all six devices at once, we would need 3.8 kN (850 lbf) of force. 
+                To generate force of this magnitude in the footprint requested by the sponsor, we determined the most effective option was pneumatic actuation. 
+                Our design incorporates three linear pneumatic actuators, a control switch, and a flow control valve. The flow control valve modulates the speed at which the punch travels and the switch controls the direction of travel. 
+                The punching tips are embedded in a 3D printed SLA plate to precisely reproduce the punch pattern and backed by a steel load plate. The steel load plate is attached to the pneumatic actuators and had slightly smaller holes through which ejection pins pass. 
+                The ejection pins remove cut material from the punch tips upon retraction of the punch.
+                <br />
+                <br />
+                One of the major challenges with this project was properly aligning the devices to the punch template within an 80&mu;m positional tolerance. To do this, we incorporated an acrylic shadow plate with laser engraved alignment markings into the design as well as a XY&theta; microscope stage and a camera. 
+                The camera looks down from the top and shows the shadow plate and sheet of microfludic devices on a computer. The operator then uses the microscope stage on which the devices sit to align the markings on the device to the marking on the shadow plate. 
+                One of the major problems that we encounter in the design was that the microscope stage could only bear 36N of force. To circumvent this, the devices are placed on a spring table which overlaps with a loading table on the edges. 
+                As the punchers press into the device material, it compresses the springs until the spring table contacts the load table which cause the punching force to transfer through load table instead of the microscope stage. 
+                <br />
+                <br />
+                For this project, I designed the spring table system and calculated the necessary spring constant and travel to ensure that the microscope stage would not be overloaded but still be able to align the devices adequately. I also was responsible for 90% of the CAD work and about half of the manufacturing drawings. 
+                The final report for this project can be found <a href="https://docs.google.com/document/d/1i5cQputm-Ymoj-AQ9_FeDHFVspODhTM8Ru0NGzpLEQ8/edit?usp=sharing">here</a>.
             </p>
             
         </section>
