@@ -109,3 +109,38 @@ header{
     padding: 0px;
     width: 40px;
 }
+
+section{
+    background-color: #00274C;
+    margin:3vw 6vw;
+    padding:3vw;
+    font-family:"Open Sans", sans-serif;
+    font-size:20px;
+   color:#FFCB05;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #FFda4f;
+    padding: 0px 10px;
+}
+input[type=submit] {
+    width: 100px;
+    height: 40px;
+    text-align:center;
+    margin-left: 45%;
+    background-color:#FFCB05;
+    color:black;
+
+}
+
+textarea {
+    width: 100%;
+    font-size: 20px;
+    border: 2px solid #00274C;
+    border-radius: 5px;
+    background: #FFda4f;
+}
