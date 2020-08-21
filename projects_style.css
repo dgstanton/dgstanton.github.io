@@ -188,3 +188,23 @@ figcaption {
 #devices img{
     width:100%;
 }
+#linkage {
+    width: 30%;
+    float: right;
+    margin:0px 60px 0px 60px;
+
+}
+
+    #linkage img {
+        width: 100%;
+    }
+
+#RMP {
+    float:right;
+    width:40%;
+}
+
+#RMP img {
+    height: 300px;
+    display:inline-block;
+}

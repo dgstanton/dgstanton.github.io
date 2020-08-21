@@ -155,23 +155,44 @@
             <h2>
                 ME 350: Design and Manufacturing II
             </h2>
+            <figure id="linkage">
+                <img src="./Images/linkage.png" />
+                <figcaption>A CAD model of the linkage I designed for ME350</figcaption>
+            </figure>
             <p>
-                For ME 350, I was on a team with four others tasked with designed and building a four-bar linkage to catch balls from two chutes and sort them by color. This project drew from previous coursework in dynamics and controls. The four-bar linkage was actuated by a geared motor with encoder that was controlled by an Arduino running PID control process.  
+                For ME 350, I was on a team with four others tasked with designed and building a four-bar linkage to catch balls from two chutes and sort them by color. This project drew from previous coursework in dynamics and controls. The four-bar linkage was actuated by a geared motor with encoder that was controlled by an Arduino running PID control process. 
+                This project provided valuable experience in machinery design and mechatronics. One of the major issues my team experience during this project was that the Arduino we were provided was faulty. Because of project challenging timeline and our inexperience with Arduinos, we failed to realize this issue until the eleventh hour of the project.
+                In the end, we were able to replace the Arduino and rewire the project, but we ran out of time to optimize the PID controller. Our project was able to the minimum requirements of the task specification but did not realize the full potential of the design.
+                <br /><br />
+                I designed the majority of the linkage, the gearing and acutation, and the interface to the playing field. I also did the majority of the technical drawing and manufacturing plans in addition to the manufacturing of the machined components. 
+                My team focused on the wiring, programming, and documentation of the system. 
+                <br /><br />
+                To design the linkage, I utilised a graphical approach in SolidWorks. I identified three positions the cup would need to be in to catch and deposit the balls and picked two points on the cup's link to act as the joints.
+                By creating a construction circle that passed through the same joint in all three positions, I could identify the necessary location of the fixed pivot for the input and follower links. Designs were then analysed in Adams to determine the torque requirements and the responsiveness of the linkage.
+                The data gathered from the Adams analysis informed our decisions around the gear ratio on the motor. 
             </p>
         </section>
         <section id="ME250">
             <h2>
                 ME 250: Design and Manufacturing I
             </h2>
+            <figure id="RMP">
+                <img src="./Images/RMP.png" />
+                <img src="./Images/RMP_final.jpg" />
+                <figcaption>My team's Robotic Machine Player CAD and Final Product</figcaption>
+            </figure>
             <p>
-
+                In ME 250, we are asked to work on a team of five to build a robotic machine player (RMP) to collect cubes located around a playing field and deposit them into baskets to score points. The playing field contains various features such as walls, ramps, and a gravel pit to make the task more challenging and inspire different ideas.
+                The instructors provide us with a box of materials to build the RMP which includes three motors and a RC system to control the motors. Our design consisted of a spring loaded scoop on rails mounted to the base plat with two wheel and a roller ball. To raise and lower the scoop, we used a winch system to lift the scoop. 
+                When the scoop reached the top of the rails, a positive stop would push down on the scoop and cause the blocks to fall out of the scoop. During testing our RMP operated perfectly and was able to complete all the tasks we had specified. 
+                However, during the undergrad symposium where we get to compete with them against other teams in a culmination of the semester, our RMP failed to move due to a faulty control box supplied by the instructional team. The rules of the competition did not allow for us to get another try to compete and we were incredibly disappointed. 
             </p>
         </section>
-        <section id="ENGR100">
+        <!--<section id="ENGR100">
             <h2>
                 ENGR 100: Introduction to Engineering
             </h2>
-        </section>
+        </section>-->
     </main>
 </body>
 </html>
