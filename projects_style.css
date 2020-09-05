@@ -208,3 +208,14 @@ figcaption {
     height: 300px;
     display:inline-block;
 }
+
+#frame {
+    float:left;
+    width:40%;
+}
+
+#fairings {
+    box-sizing:border-box;
+    width:50%;
+    margin: 0px 25%;
+}
