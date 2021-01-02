@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | David Stanton</title>
+    <meta name="author" content="David Stanton" />
+    <meta name="description" content="Personal website and portfolio of David Stanton, Masters Student at the University of Michigan. This page covers what I'm up to and some of my past projects." />
+    <meta name="keywords" content="David, Stanton, David Stanton, dgstan, dgstanton, umich, University of Michigan, david stanton, projects, portfolio, david, stanton, michigan" />
+
+    <link href="./projects_style.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <img src="./Images/headshot.jpg" />
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./contact.html">Contact</a>
+        <div class="socialgrid">
+            <a href="https://www.linkedin.com/in/david-stanton-2020/" class="socials" target="_blank"><img src="./Images/LI-In-Bug.png" class="socialphoto" id="liphoto" /></a>
+            <a href="https://www.instagram.com/dgstan__/" class="socials" target="_blank"><img src="./Images/IG_Glyph_Fill.png" class="socialphoto" id="igphoto" /></a>
+            <a href="https://www.facebook.com/david.stanton.735/" class="socials" target="_blank"><img src="./Images/facebook.png" id="fbphoto" /></a>
+        </div>
+    </nav> 
+    <main>
+        <header>
+            <h1>Projects</h1>
+            <p>
+                <strong>
+                    <a href="#spark">Spark</a> |
+                    <a href="#website">Website</a> |
+                    <a href="#schlisselsmarket">CCC: Schlissels Market</a> |
+                    <a href="#ME450">ME 450</a> |
+                    <a href="#ME350">ME 350</a> |
+                    <a href="#ME250">ME 250</a> <!--|
+                    <a href="#ENGR100">ENGR 100</a>-->
+                </strong>
+            </p>
+        </header>
+        <section id="spark">
+            <h2>Spark Electric Racing</h2>
+            <img src="./Images/SparkLogo.png" id="sparklogo"/>
+            <p>
+                One of the most longest projects I have been a part of has been the design and construction of electric motorcycles as part of the <a href="http://spark.engin.umich.edu/splash" target="_blank">Spark Electric Racing</a> design team at UM. 
+                The team originally started as a senior capstone project in the mechanical engineering department with the goal of retrofitting a gasoline motorcycle to be all electric. By the time I joined the team as a freshman, there were well established
+                and had secured space in the Wilson Student Team Project Center (<a href="https://teamprojects.engin.umich.edu/" target="_blank">WSTPC</a>) amongst the UM Formula FSAE, Baja, and Solar Car teams. We are nearly complete in the assembly of the second bike Mercury 
+                and are in the midst of design for the third bike Atlas. From January 2019 to May 2020, I served as the mechanical design lead - responsible for everything from thermal management and aerodynamics to structures and powertrain integration on Atlas. 
+                Under my leadership, Atlas went from "Hey we should start designing a new bike" to approximately 70% designed. We had hoped to complete design in the spring of 2020, but due to the COVID-19 pandemic,
+                the team halted operations to allow our members to adapt to the remote learning environment.
+                <br />
+                <br />
+                Spark is unique in that we don't require any amount of work to remain on the team. We believe that "you get out what you put in." The members who are the most involved learn and grow the most and eventually become leaders. That said I've done quite a bit of work on Spark, so here's some of that work.
+            </p>
+            <h3>
+                Atlas's Frame
+            </h3>
+            <img src="./frame.png" id="frame" />
+            <p>
+                I designed the entirety of Atlas's main frame in an effort to simplify fabrication and optimize the usable space on the bike in additon to having a structurally sound bike.
+                The decision was made early on to use round steel tubes instead of the square tubing selected for Mercury. The reasoning behind this decision was twofold.
+                First, round tubes could be bent into nonlinear shapes which would reduce the number of individual tubes and welds joints. This greatly would greatly simplify the frame welding and 
+                reduce the number of points of failure. The second reason is that round tube is generally cheaper and more easily sourced than square tubing. Another key decision was the decision to 
+                place the electric motor on the swing arm's rotation axis. This decision was the result of many challenges around chain alignment and tension on Mercury due to the drive axis being different than the swing arm axis. 
+                The frame will be made from 4130 Steel and the tubes will be cut, bent, and notched by VR3, one of our suppliers/sponsors. Welding of the frame will be done in house by our team.
+                <br/>
+                <br/>
+                In addition to designing the frame, I also conducted the structural analysis of the frame using Hyperworks for pre- & post-processing and Abaqus as the solver. Every load case has at least a 1.5 safety factor against yielding in this analysis and further development of the model may yield higher safety factors in the turning load cases.
+                During the analysis, additional gussets were added near the front to provide additional reinforcement in the maximum braking loadcase since there were significant stress concentrations that would have caused yielding. 
+            </p>
+            <img src="./Images/FEA.png" id="fea" />
+            <h3>
+                Atlas's Fairings
+            </h3>
+            <p>
+                I also designed the fairings for Atlas. The fairings are the aerodynamic packaging for the motorcycle and vast majority of what you see. 
+                The fairings for Mercury were challenging to assemble and attach to the bike, so on Atlas, there are only two pieces that will be made from carbon fiber reinforced composites. 
+                In addition to reducing the number of components, the lower fairing doubles as the structure in which the batteries are contained. This will reduce weight and open up more space for a higher pack capacity. 
+                Using the knowlege learned in ME 451 Properties of Advanced Materials & Composites, I determined the necessary ply layering to produce a symmetric, quasi-isotropic laminate with the desired strength and stiffness to meet our needs.  
+            </p>
+            <img src="./fairings.png" id="fairings" />
+            <h3>
+                Mercury's Cooling System
+            </h3>
+            
+            <p>
+                Prior to starting Atlas, one of the last remaining design items on Mercury was integrating a cooling system to prevent the system from overheating. The previous designers had failed to include space for the radiator or any hoses to circulate coolant. 
+                I determined how much heat would be produced by the motor and controller from their specifications then used a scholarly paper to predict the heat rejection from the radiator and determine required coolant and air flow rates. After specing out the system,
+                I managed to find space to incorporate the radiator and other components onto the bike .
+            </p>
+            
+        </section>
+        <section id="website">
+            <h2>
+                This Website
+            </h2>
+            <p>
+                Born out of a global pandemic, this webiste one of my projects from Summer of 2020. I had originally planned to travel during this summer, but the pandemic blew that plan up, so I had to find something new to do. I learned the basics of HTML and CSS from Codecademy and set to work. It is currently hosted through GitHub's Pages for free. You can judge for yourself how I did on this project.
+            </p>
+        </section>
+        <section id="schlisselsmarket">
+            <h2>
+                COVID Campus Challenge: Schlissel's Market
+            </h2>
+            <img src="./Images/SchlisselsMarket.png" id="market" />
+            <p>
+                In the beginning of Summer 2020, UM launched the COVID Campus Challenge to solict student input on how to manage issues induced by COVID.
+                Amongst the topic areas, there was transportation, housing, food security, and mental health. My group was working on addressing food insecurity on campus. Through scholarly research and contact with on-campus experts,
+                we found that food insecurity at UM was largely driven by inaccessability instead of costs as we had expected. There are several areas of Ann Arbor which qualify as food deserts among which are several off-campus student housing areas. 
+                <br /><br />
+                To remedy this shortcoming, we proposed that UM establish an on-campus, at-cost grocery store in an existing, under-utilised  building already owned by UM. This grocery would increase equity, affordability, and nourishment of students living in proximity to UM. 
+                It would also reduce spread between the UM community and the Ann Arbor community at large by reducing interaction in groceries and on public transit to the groceries. An on-campus grocery would also enable a layout that is optimized for health and safety amid the pandemic. 
+                In the end, my team's proposal was not selected due to the high upfront capital investment and the financial strain on the university from the pandemic. 
+            </p>
+        </section>
+        <section id="ME450">
+            <h2>
+                ME 450: Senior Capstone
+            </h2>
+            <figure id="puncher">
+                <img src="./Images/puncher.png" />
+                <figcaption>Final CAD Rendering of the Puncher Design</figcaption>
+            </figure>
+            <p>
+                For my senior capstone project, I worked with on a team of three others to design a "reconfigurable puncher for microfludic devices". Though we were supposed to manufacture and test the puncher as well, the COVID-19 pandemic forced all coursework online and cause the pivot to providing
+                detailed manufacturing plans and documentation to the sponsor so that the project could be completed at a later date.
+                <br /><br />
+                Our project was sponsored by the Integrated Biosystems and Biomechanics Laboratory (<a href="http://me-web.engin.umich.edu/ibbl/">IBBL</a>) in the UM ME department. Researchers in the IBBL had developed a novel microfluidic device which enabled stem cells to be induced into an analog for a human embryo. 
+                Research conducted using this device was <a href="http://me-web.engin.umich.edu/ibbl//pdf/2019_Nature_Zheng.pdf">published in Nature</a> in 2019. Because of the novel ability of generate human embryo analogs, this microfluidic device has the potential to be used for research into human development and 
+                pharmaceutical toxicology research on the effects on novel drugs on embryos. However, one of the major challenges preventing the mass production of the microfluidic devices was need to hand punch the ports on the device one at a time. Punching ports took around 5 minutes per device.
+                Thus, we were asked to design a puncher that would significantly reduce the time for this process.
+            </p>
+            <figure id="devices">
+                <img src="./Images/pdms_devices.jpg" />
+                <figcaption>
+                    A sample with six microfluidic devices molded into PDMS. The bottom right two devices have had ports punched into them.
+                </figcaption>
+            </figure>
+            <p>
+                Our design punches six devices at one time in an estimated five minutes which is an over 80% reduction in cycle time. We calculated that to punch through all six devices at once, we would need 3.8 kN (850 lbf) of force. 
+                To generate force of this magnitude in the footprint requested by the sponsor, we determined the most effective option was pneumatic actuation. 
+                Our design incorporates three linear pneumatic actuators, a control switch, and a flow control valve. The flow control valve modulates the speed at which the punch travels and the switch controls the direction of travel. 
+                The punching tips are embedded in a 3D printed SLA plate to precisely reproduce the punch pattern and backed by a steel load plate. The steel load plate is attached to the pneumatic actuators and had slightly smaller holes through which ejection pins pass. 
+                The ejection pins remove cut material from the punch tips upon retraction of the punch.
+                <br />
+                <br />
+                One of the major challenges with this project was properly aligning the devices to the punch template within an 80&mu;m positional tolerance. To do this, we incorporated an acrylic shadow plate with laser engraved alignment markings into the design as well as a XY&theta; microscope stage and a camera. 
+                The camera looks down from the top and shows the shadow plate and sheet of microfludic devices on a computer. The operator then uses the microscope stage on which the devices sit to align the markings on the device to the marking on the shadow plate. 
+                One of the major problems that we encounter in the design was that the microscope stage could only bear 36N of force. To circumvent this, the devices are placed on a spring table which overlaps with a loading table on the edges. 
+                As the punchers press into the device material, it compresses the springs until the spring table contacts the load table which cause the punching force to transfer through load table instead of the microscope stage. 
+                <br />
+                <br />
+                For this project, I designed the spring table system and calculated the necessary spring constant and travel to ensure that the microscope stage would not be overloaded but still be able to align the devices adequately. I also was responsible for 90% of the CAD work and about half of the manufacturing drawings. 
+                The final report for this project can be found <a href="https://docs.google.com/document/d/1i5cQputm-Ymoj-AQ9_FeDHFVspODhTM8Ru0NGzpLEQ8/edit?usp=sharing">here</a>.
+            </p>
+            
+        </section>
+        <section id="ME350">
+            <h2>
+                ME 350: Design and Manufacturing II
+            </h2>
+            <figure id="linkage">
+                <img src="./Images/linkage.png" />
+                <figcaption>A CAD model of the linkage I designed for ME350</figcaption>
+            </figure>
+            <p>
+                For ME 350, I was on a team with four others tasked with designed and building a four-bar linkage to catch balls from two chutes and sort them by color. This project drew from previous coursework in dynamics and controls. The four-bar linkage was actuated by a geared motor with encoder that was controlled by an Arduino running PID control process. 
+                This project provided valuable experience in machinery design and mechatronics. One of the major issues my team experience during this project was that the Arduino we were provided was faulty. Because of project challenging timeline and our inexperience with Arduinos, we failed to realize this issue until the eleventh hour of the project.
+                In the end, we were able to replace the Arduino and rewire the project, but we ran out of time to optimize the PID controller. Our project was able to the minimum requirements of the task specification but did not realize the full potential of the design.
+                <br /><br />
+                I designed the majority of the linkage, the gearing and acutation, and the interface to the playing field. I also did the majority of the technical drawing and manufacturing plans in addition to the manufacturing of the machined components. 
+                My team focused on the wiring, programming, and documentation of the system. 
+                <br /><br />
+                To design the linkage, I utilised a graphical approach in SolidWorks. I identified three positions the cup would need to be in to catch and deposit the balls and picked two points on the cup's link to act as the joints.
+                By creating a construction circle that passed through the same joint in all three positions, I could identify the necessary location of the fixed pivot for the input and follower links. Designs were then analysed in Adams to determine the torque requirements and the responsiveness of the linkage.
+                The data gathered from the Adams analysis informed our decisions around the gear ratio on the motor. 
+            </p>
+        </section>
+        <section id="ME250">
+            <h2>
+                ME 250: Design and Manufacturing I
+            </h2>
+            <figure id="RMP">
+                <img src="./Images/RMP.PNG" />
+                <img src="./Images/RMP_final.JPG" />
+                <figcaption>My team's Robotic Machine Player CAD and Final Product</figcaption>
+            </figure>
+            <p>
+                In ME 250, we are asked to work on a team of five to build a robotic machine player (RMP) to collect cubes located around a playing field and deposit them into baskets to score points. The playing field contains various features such as walls, ramps, and a gravel pit to make the task more challenging and inspire different ideas.
+                The instructors provide us with a box of materials to build the RMP which includes three motors and a RC system to control the motors. Our design consisted of a spring loaded scoop on rails mounted to the base plat with two wheel and a roller ball. To raise and lower the scoop, we used a winch system to lift the scoop. 
+                When the scoop reached the top of the rails, a positive stop would push down on the scoop and cause the blocks to fall out of the scoop. During testing our RMP operated perfectly and was able to complete all the tasks we had specified. 
+                However, during the undergrad symposium where we get to compete with them against other teams in a culmination of the semester, our RMP failed to move due to a faulty control box supplied by the instructional team. The rules of the competition did not allow for us to get another try to compete and we were incredibly disappointed. 
+            </p>
+        </section>
+        <!--<section id="ENGR100">
+            <h2>
+                ENGR 100: Introduction to Engineering
+            </h2>
+        </section>-->
+    </main>
+</body>
+</html>

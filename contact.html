@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | David Stanton</title>
+    <meta name="author" content="David Stanton" />
+    <meta name="description" content="Personal website and portfolio of David Stanton, Masters Student at the University of Michigan. Get in touch with me here!" />
+    <meta name="keywords" content="David, Stanton, David Stanton, dgstan, dgstanton, umich, University of Michigan, david stanton, contact, profile, portfolio, david, stanton" />
+    <link href="./contact_style.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <img src="./Images/headshot.jpg" class="headshot" />
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./contact.html">Contact</a>
+        <div class="socialgrid">
+            <a href="https://www.linkedin.com/in/david-stanton-2020/" class="socials" target="_blank"><img src="./Images/LI-In-Bug.png" class="socialphoto" id="liphoto"/></a>
+            <a href="https://www.instagram.com/dgstan__/" class="socials" target="_blank"><img src="./Images/IG_Glyph_Fill.png" class="socialphoto" id="igphoto"/></a>
+            <a href="https://www.facebook.com/david.stanton.735/" class="socials" target="_blank"><img src="./Images/facebook.png" id="fbphoto" /></a>
+        </div>
+    </nav> 
+    <main>
+        <header>
+            <h1>Contact me!</h1>
+        </header>
+        <section>
+            <form method="post" action="https://formspree.io/xgenbzqp">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+                <br /><br />
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required/>
+                <br /><br />
+                <label for="phone">Phone #</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
+                <br /><br />
+                <label for="message">Message:</label><br />
+                <textarea name="message" id="message" required rows="10"></textarea>
+                <input type="submit" value="Submit" />
+            </form>
+        </section>
+    </main>
+</body>
+</html>
